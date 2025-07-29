@@ -11,12 +11,12 @@
   --foreground: var(--color-lorenzo-dark);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: var(--color-lorenzo-dark);
     --foreground: var(--color-lorenzo-gray);
   }
-}
+} */
 
 body {
   background: var(--background);
