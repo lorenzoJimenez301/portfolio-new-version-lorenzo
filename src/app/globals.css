@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
+
+
 @theme inline {
   --color-lorenzo-green: #cbfe00;
   --color-lorenzo-dark: #212121;
   --color-lorenzo-gray: #e6e6e6;
 }
+
 
 :root {
   --background: var(--color-lorenzo-gray);
