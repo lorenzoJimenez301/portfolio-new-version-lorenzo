@@ -22,16 +22,21 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${roboto.className} antialiased select-none`}>
         <AnimatedCursor
-          color="255,255,255" // blanco puro para mejor efecto de exclusión
+          color="230,230,230" 
           innerSize={10}
-          outerSize={40}
+          outerSize={30}
           outerAlpha={1}
           innerScale={0.9}
-          outerScale={2}
+          outerScale={1.5}
           trailingSpeed={1}
           outerStyle={{
             mixBlendMode: "exclusion",
           }}
+                clickables={[
+        'a',
+        'svg',
+        'button',
+      ]}
         />
         <Navbar />
         {children}

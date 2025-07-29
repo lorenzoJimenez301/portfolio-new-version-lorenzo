@@ -123,7 +123,6 @@ export const Navbar = () => {
               href="/"
             >
               HOME
-              <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
             </a>
           </li>
           <li className="flex items-center h-max w-18 ">
@@ -132,7 +131,6 @@ export const Navbar = () => {
               href="/"
             >
               ABOUT
-              <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
             </a>
           </li>
           <li className="flex items-center h-max w-18 ">
@@ -141,7 +139,6 @@ export const Navbar = () => {
               href="/"
             >
               WORK
-              <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
             </a>
           </li>
           <li className="flex items-center h-max w-18 ">
@@ -150,21 +147,20 @@ export const Navbar = () => {
               href="/"
             >
               CONTACT
-              <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
             </a>
           </li>
         </ul>
       </div>
       <div className="hidden lg:flex items-center">
         <ul className="flex items-center space-x-7">
-          <li className="cursor-pointer hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110">
+          <li className="hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110">
             <FaBehanceSquare />
           </li>
           <li>
-            <FaGithub className="cursor-pointer hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110" />
+            <FaGithub className="hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110" />
           </li>
           <li>
-            <FaLinkedin className="cursor-pointer hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110" />
+            <FaLinkedin className="hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110" />
           </li>
         </ul>
       </div>

@@ -6,6 +6,8 @@
   --color-lorenzo-green: #cbfe00;
   --color-lorenzo-dark: #212121;
   --color-lorenzo-gray: #e6e6e6;
+  --color-lorenzo-medigray: #E0E0E0;
+  --color-lorenzo-lightgray: #C5C5C5;
 }
 
 
@@ -24,4 +26,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+h1{
+  text-indent: 0px!important;
 }
