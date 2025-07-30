@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col justify-center gap-0 pl-3">
               <h2 className="text-xl font-semibold">
-                I'm a web developer – UX/UI designer – graphic designer
+                I`m a web developer – UX/UI designer – graphic designer
               </h2>
               <div className="mt-4 flex justify-center gap-4 ">
                 <p className="flex-10/12 font-light ">
