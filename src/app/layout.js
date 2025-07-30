@@ -2,8 +2,8 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./Components/Navbar";
 import { Footer } from "./Components/Footer";
-import AnimatedCursor from "react-animated-cursor";
 import Particles from "@/Backgrounds/Particles/Particles";
+import { CursorCustom } from "./Components/CursorCustom";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -29,23 +29,11 @@ export default function RootLayout({ children }) {
             particleSpread={10}
             speed={0.2}
             particleBaseSize={100}
-            alphaParticles={true  }
+            alphaParticles={true}
             disableRotation={false}
           />
         </div>
-        <AnimatedCursor
-          color="230,230,230"
-          innerSize={10}
-          outerSize={30}
-          outerAlpha={1}
-          innerScale={0.9}
-          outerScale={1.5}
-          trailingSpeed={1}
-          outerStyle={{
-            mixBlendMode: "exclusion",
-          }}
-          clickables={["a", "svg", "button"]}
-        />
+        <CursorCustom />
         <Navbar />
         {children}
         <Footer />

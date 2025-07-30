@@ -7,6 +7,7 @@ import DecryptedText from "../TextAnimations/DecryptedText/DecryptedText";
 import { RiArrowDownWideLine } from "react-icons/ri";
 
 export default function Home() {
+
   return (
     <main className="h-screen snap-y snap-mandatory overflow-y-scroll">
       <section className="hero snap-start container mx-auto pt-28 flex flex-col lg:flex-row justify-center items-center h-screen max-h-[54rem] z-50 relative">
@@ -52,7 +53,6 @@ export default function Home() {
                   Creative Web Developer building fast, accessible, and <br />{" "}
                   engaging experiences.
                 </p>
-                
               </div>
               <div className="mt-5">
                 <button className="bg-transparent border border-lorenzo-dark p-3 px-10 font-bold text-sm cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out hover:bg-lorenzo-dark hover:text-lorenzo-lightgray">
