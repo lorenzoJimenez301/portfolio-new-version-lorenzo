@@ -1,15 +1,12 @@
 @import "tailwindcss";
 
-
-
 @theme inline {
   --color-lorenzo-green: #cbfe00;
   --color-lorenzo-dark: #212121;
   --color-lorenzo-gray: #e6e6e6;
-  --color-lorenzo-medigray: #E0E0E0;
-  --color-lorenzo-lightgray: #C5C5C5;
+  --color-lorenzo-medigray: #e0e0e0;
+  --color-lorenzo-lightgray: #c5c5c5;
 }
-
 
 :root {
   --background: var(--color-lorenzo-gray);
@@ -22,12 +19,31 @@
     --foreground: var(--color-lorenzo-gray);
   }
 } */
+*, button{
+  text-transform: uppercase;
 
+}
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
+  height: 100%;
+  overflow: hidden;
 }
 
-h1{
-  text-indent: 0px!important;
+.mask-slider {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+.mask-slider2 {
+  mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
 }

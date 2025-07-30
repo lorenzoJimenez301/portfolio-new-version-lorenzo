@@ -52,7 +52,7 @@ export const Navbar = () => {
   );
 
   return (
-    <nav className=" w-full bg-lorenzo-gray px-5 py-4 lg:px-12 lg:flex items-center justify-between min-w-sm fixed z-100">
+    <nav className="w-full bg-lorenzo-gray px-5 py-4 lg:px-12 lg:flex items-center justify-between min-w-sm fixed z-100">
       <div className="flex justify-between gap-7 md:gap-12">
         <div className="cursor-pointer">{svg}</div>
         <div className="flex justify-between items-center gap-10 lg:hidden ">
