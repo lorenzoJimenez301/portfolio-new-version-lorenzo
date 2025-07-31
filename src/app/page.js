@@ -3,13 +3,13 @@
 import Image from "next/image";
 import { FaNodeJs, FaReact, FaFigma } from "react-icons/fa";
 import { SiAdobecreativecloud, SiBlender } from "react-icons/si";
-import DecryptedText from "../TextAnimations/DecryptedText/DecryptedText";
 import { VscArrowRight } from "react-icons/vsc";
 import { RiArrowDownWideLine } from "react-icons/ri";
 import "keen-slider/keen-slider.min.css";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Footer } from "./Components/Footer";
+import SplitText from "../TextAnimations/SplitText/SplitText";
+import TextType from "../TextAnimations/TextType/TextType";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
@@ -21,8 +21,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="h-screen overflow-y-scroll snap-y snap-mandatory text-lorenzo-dark">
-      <section className="hero snap-start h-[54rem] container mx-auto pt-28 flex flex-col lg:flex-row justify-center items-center z-50 relative ">
+    <main className=" text-lorenzo-dark">
+      <section className="hero h-[54rem] container mx-auto pt-28 flex flex-col lg:flex-row justify-center items-center z-50 relative ">
         <div className="section1 flex-3  flex flex-col justify-center gap-20  ">
           <div className="text-justify">
             <ul className="pl-3 flex text-2xl gap-9">
@@ -43,23 +43,34 @@ export default function Home() {
               </li>
             </ul>
             <div className="flex items-center justify-start">
-              <DecryptedText
+              <SplitText
                 text="Hello"
-                speed={100}
-                maxIterations={100}
-                sequential={true}
-                revealDirection="start"
-                characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+"
-                className="text-[12.5rem] leading-none"
-                parentClassName="text-[12.5rem] leading-none"
-                encryptedClassName="text-[12.5rem] leading-none"
-                animateOn="view"
+                className="text-[12.5rem] leading-none text-lorenzo-dark"
+                delay={90}
+                duration={0.6}
+                ease="power3.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 40 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.1}
+                rootMargin="-100px"
+                textAlign="center"
               />
             </div>
             <div className="flex flex-col justify-center gap-0 pl-3">
-              <h1 className="text-xl font-semibold">
+              {/* <h1 className="text-xl font-semibold">
                 I`m a web developer – UX/UI designer – graphic designer
-              </h1>
+              </h1> */}
+              <TextType
+                text={[
+                  "I`m a web developer – UX/UI designer – graphic designer",
+                ]}
+                typingSpeed={30}
+                showCursor={true}
+                cursorCharacter="_"
+                className="text-xl font-semibold"
+                textColors={["var(--color-lorenzo-dark)"]}
+              />
               <div className="mt-4 flex justify-center gap-4 ">
                 <p className="flex-10/12 font-light ">
                   Creative Web Developer building fast, accessible, and <br />{" "}
@@ -102,7 +113,7 @@ export default function Home() {
         <p>Development</p>
         <p>Deploy</p>
       </section>
-      <section id="new-work" className="snap-start h-screen max-h-[60rem]">
+      <section id="new-work" className="h-screen max-h-[60rem]">
         <article className=" pt-20 flex flex-col gap-23 justify-center items-center h-screen max-h-[54rem] ">
           <div className=" container mx-auto">
             <div className="flex items-center gap-4">
@@ -156,12 +167,11 @@ export default function Home() {
           <div>
             <button className="flex items-center justify-center  gap-3  text-xs bg-lorenzo-dark text-lorenzo-gray p-3 px-10 font-bold cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out ">
               More projects
-              <VscArrowRight className="text-xl mb-0.5"/>
+              <VscArrowRight className="text-xl mb-0.5" />
             </button>
           </div>
         </article>
       </section>
-      <Footer />
     </main>
   );
 }

@@ -23,11 +23,6 @@
   text-transform: uppercase;
 
 }
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
 
 .mask-slider {
   mask-image: linear-gradient(

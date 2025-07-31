@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./Components/Navbar";
+import { Footer } from "./Components/Footer";
 import Particles from "@/Backgrounds/Particles/Particles";
 import { CursorCustom } from "./Components/CursorCustom";
 import "keen-slider/keen-slider.min.css";
@@ -61,6 +62,7 @@ export default function RootLayout({ children }) {
         </div>
         <CursorCustom />
         {children}
+        <Footer />
       </body>
     </html>
   );

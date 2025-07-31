@@ -45,7 +45,7 @@ export const Footer = () => {
   );
 
   return (
-    <footer className="container mx-auto flex items-center justify-between py-15 text-center snap-start">
+    <footer className="container mx-auto flex items-center justify-between py-15 text-center z-100">
       <div>
         <div>
           {svg}
