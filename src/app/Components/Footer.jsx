@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export const Footer = () => {
   const date = new Date();
@@ -80,7 +81,7 @@ export const Footer = () => {
     <footer className="container mx-auto flex items-center justify-between py-15 text-center z-100 text-lorenzo-dark">
       <div>
         <div className="flex flex-col gap-3">
-          {svg}
+          <Link href="/">{svg}</Link>
           <p className="font-light">
             ©{date.getFullYear()}, ALL RIGHT RESERVED.
           </p>
