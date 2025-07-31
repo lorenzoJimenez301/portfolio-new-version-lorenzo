@@ -35,7 +35,28 @@ export default function RootLayout({ children }) {
         />
         <link
           rel="apple-touch-icon"
-          href="images/Light Logo.png"
+          sizes="180x180"
+          href="images/Icon-180.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="114x114"
+          href="images/Icon-144.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="114x114"
+          href="images/Icon-114.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="72x72"
+          href="images/Icon-72.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="57x57"
+          href="images/Icon-57.png"
         />
       </head>
       <body
