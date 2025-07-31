@@ -99,7 +99,7 @@ export default function Home() {
         </div>
         <div className="section2 flex-2/5 relative overflow-hidden h-full ">
           <Image
-            className="object-cover object-center scale-[230%] absolute top-[26rem]"
+            className="object-cover object-center scale-[230%] absolute top-[26rem] hidden"
             src={"/images/hero-image.png"}
             alt="Hero Image"
             height={2302}

@@ -33,39 +33,15 @@ export default function RootLayout({ children }) {
           href="images/svg/Full Gray.svg"
           media="(prefers-color-scheme: dark)"
         />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="images/Icon-180.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="114x114"
-          href="images/Icon-144.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="114x114"
-          href="images/Icon-114.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="72x72"
-          href="images/Icon-72.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="57x57"
-          href="images/Icon-57.png"
-        />
+
+        <meta name="apple-mobile-web-app-title" content="Portfolio" />
       </head>
       <body
         className={`${roboto.className} antialiased select-none bg-lorenzo-gray`}
       >
-        <Navbar />
-        <div className="h-screen w-screen absolute -z-100">
+        <div className="fixed inset-0 -z-10 pointer-events-none">
           <Particles
-            className={"opacity-30"}
+            className="w-full h-full"
             particleColors={["#E0E0E0", "#C5C5C5"]}
             particleCount={400}
             particleSpread={10}
@@ -75,6 +51,7 @@ export default function RootLayout({ children }) {
             disableRotation={false}
           />
         </div>
+        <Navbar />
         <CursorCustom />
         {children}
         <Footer />
