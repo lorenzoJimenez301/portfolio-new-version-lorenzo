@@ -35,13 +35,7 @@ export default function RootLayout({ children }) {
         />
         <link
           rel="apple-touch-icon"
-          href="images/svg/Logo Gray.svg"
-          media="(prefers-color-scheme: light)"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="images/svg/Full Gray.svg"
-          media="(prefers-color-scheme: dark)"
+          href="images/Light Logo.png"
         />
       </head>
       <body
