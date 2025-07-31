@@ -5,7 +5,7 @@ export const Footer = () => {
   const date = new Date();
   const svg = (
     <svg
-    fill="var(--color-lorenzo-dark)"
+      className="fill-lorenzo-dark dark:fill-lorenzo-gray"
       id="Layer_1"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ export const Footer = () => {
   );
 
   return (
-    <footer className="container mx-auto flex items-center justify-between py-15 text-center z-100 text-lorenzo-dark">
+    <footer className="container mx-auto flex items-center justify-between py-15 text-center z-100 ">
       <div>
         <div className="flex flex-col gap-3">
           <Link href="/">{svg}</Link>

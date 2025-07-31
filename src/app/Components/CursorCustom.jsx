@@ -24,7 +24,8 @@ export const CursorCustom = () => {
 
   return (
     <AnimatedCursor
-      color='230,230,230'
+      color={'230,230,230'}
+      innerStyle={{backgroundColor: 'var(--background)'}}
       innerSize={10}
       outerSize={30}
       outerAlpha={1}

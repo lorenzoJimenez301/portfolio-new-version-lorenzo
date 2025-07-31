@@ -21,11 +21,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className=" text-lorenzo-dark">
-      <section className="hero h-[54rem] container mx-auto pt-28 flex flex-col lg:flex-row justify-center items-center z-50 relative ">
-        <div className="section1 flex-3  flex flex-col justify-center gap-20  ">
+    <main>
+      <section className="hero lg:h-[54rem] container mx-auto pt-28 flex flex-col lg:flex-row justify-center items-center z-50 relative">
+        <div className="section1 flex-3 flex flex-col justify-center items-center gap-20 bg-orange-400 px-4 w-full lg:w-auto">
           <div className="text-justify">
-            <ul className="pl-3 flex text-2xl gap-9">
+            <ul className="lg:pl-3 flex justify-center lg:justify-start text-2xl gap-9 w-full py-2">
               <li>
                 <FaNodeJs />
               </li>
@@ -42,10 +42,10 @@ export default function Home() {
                 <FaFigma />
               </li>
             </ul>
-            <div className="flex items-center justify-start">
+            <div className="flex items-center justify-center lg:justify-start bg-red-500">
               <SplitText
                 text="Hello"
-                className="text-[12.5rem] leading-none text-lorenzo-dark"
+                className="text-[7rem] md:text-[10rem] lg:text-[12.5rem] leading-none whitespace-nowrap"
                 delay={90}
                 duration={0.6}
                 ease="power3.out"
@@ -57,49 +57,46 @@ export default function Home() {
                 textAlign="center"
               />
             </div>
-            <div className="flex flex-col justify-center gap-0 pl-3">
-              {/* <h1 className="text-xl font-semibold">
-                I`m a web developer – UX/UI designer – graphic designer
-              </h1> */}
+            <div className="flex flex-col justify-center items-center lg:items-start lg:pl-3 w-full">
               <TextType
                 text={[
-                  "I`m a web developer – UX/UI designer – graphic designer",
+                  "I`m Lorenzo, web developer – UX/UI designer – graphic designer",
                 ]}
                 typingSpeed={30}
                 showCursor={true}
                 cursorCharacter="_"
-                className="text-xl font-semibold"
-                textColors={["var(--color-lorenzo-dark)"]}
+                className="text-center lg:text-justify md:text-lg lg:text-xl font-semibold max-w-[30rem] lg:max-w-full bg-fuchsia-700"
+                textColors={["var(--foreground)"]}
               />
-              <div className="mt-4 flex justify-center gap-4 ">
-                <p className="flex-10/12 font-light ">
+              <div className="mt-2 lg:mt-4 hidden lg:flex justify-center gap-4 text-center lg:text-justify">
+                <p className="lg:flex-10/12 font-light text-xs lg:text-base">
                   Creative Web Developer building fast, accessible, and <br />{" "}
                   engaging experiences.
                 </p>
               </div>
-              <div className="mt-5">
-                <button className=" bg-transparent border border-lorenzo-dark p-3 px-10 font-bold text-xs cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out hover:bg-lorenzo-dark hover:text-lorenzo-lightgray">
+              <div className="mt-5 flex justify-center lg:justify-start">
+                <button className=" bg-transparent border border-lorenzo-dark dark:border-lorenzo-gray p-3 px-10 font-bold text-xs cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out ">
                   View Portfolio
                 </button>
               </div>
             </div>
           </div>
-          <div className="h-20 pl-3">
+          <div className="h-20 lg:pl-3 hidden lg:block">
             <button
               onClick={() => {
                 const seccion = document.getElementById("new-work");
                 seccion?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="flex flex-col justify-center items-center w-max  font-medium group relative"
+              className="flex flex-col justify-center items-center w-max font-medium group relative"
             >
               <p>Scroll Down</p>
               <RiArrowDownWideLine className="text-3xl top-6 group-hover:mt-3 transition-all duration-200 " />
             </button>
           </div>
         </div>
-        <div className="section2 flex-2/5 relative overflow-hidden h-full ">
+        <div className="section2 flex-2/5 relative lg:overflow-hidden lg:h-full">
           <Image
-            className="object-cover object-center scale-[230%] absolute top-[26rem] hidden"
+            className="object-cover object-center lg:scale-[230%] lg:absolute lg:top-[26rem] hidden"
             src={"/images/hero-image.png"}
             alt="Hero Image"
             height={2302}
@@ -108,7 +105,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className=" h-20 flex justify-evenly items-center bg-lorenzo-medigray text-lorenzo-lightgray font-medium text-xl">
+      <section className=" h-20 flex justify-evenly items-center bg-lorenzo-medigray dark:bg-lorenzo-medidark text-lorenzo-lightgray dark:text-lorenzo-lightdark font-medium text-xl">
         <p>Design</p>
         <p>Development</p>
         <p>Deploy</p>
@@ -158,6 +155,7 @@ export default function Home() {
                       className="w-[30rem] pr-10 hover:scale-105 transition-transform duration-300 ease-in-out"
                       src={project.image}
                       alt="slider image"
+                      priority
                     />
                   );
                 })}
@@ -165,7 +163,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <button className="flex items-center justify-center  gap-3  text-xs bg-lorenzo-dark text-lorenzo-gray p-3 px-10 font-bold cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out ">
+            <button className="flex items-center justify-center gap-3  text-xs font-bold bg-lorenzo-dark dark:bg-lorenzo-green text-lorenzo-gray dark:text-lorenzo-dark p-3 px-10 cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out ">
               More projects
               <VscArrowRight className="text-xl mb-0.5" />
             </button>

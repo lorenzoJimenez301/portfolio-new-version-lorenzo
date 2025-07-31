@@ -17,6 +17,22 @@ export const metadata = {
   title: "Portfolio Lorenzo Jiménez",
   description:
     "Portfolio of Lorenzo Jiménez – UI/UX designer and front-end developer focused on clean, user-centered digital experiences.",
+  icons: {
+    icon: [
+      {
+        url: "images/svg/Logo Gray.svg",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "images/svg/Full Gray.svg",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  appleWebApp: {
+    title: "Portfolio",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -37,7 +53,7 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-title" content="Portfolio" />
       </head>
       <body
-        className={`${roboto.className} antialiased select-none bg-lorenzo-gray`}
+        className={`${roboto.className} antialiased select-none text-lorenzo-dark dark:text-lorenzo-gray`}
       >
         <div className="fixed inset-0 -z-10 pointer-events-none">
           <Particles
