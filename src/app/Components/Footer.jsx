@@ -78,7 +78,7 @@ export const Footer = () => {
   );
 
   return (
-    <footer className="container mx-auto flex items-center justify-between py-15 text-center z-100 ">
+    <footer className="container mx-auto flex items-center justify-center lg:justify-between py-15 text-center z-100 ">
       <div>
         <div className="flex flex-col gap-3">
           <Link href="/">{svg}</Link>

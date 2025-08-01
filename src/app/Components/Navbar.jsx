@@ -6,7 +6,6 @@ import { FaBehanceSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,8 +30,8 @@ export const Navbar = () => {
   );
 
   return (
-    <nav className="w-full min-w-sm bg-lorenzo-gray dark:bg-lorenzo-dark text-lorenzo-dark dark:text-lorenzo-gray px-5 py-4 lg:px-12 lg:flex items-center justify-between fixed z-100">
-      <div className="flex justify-between gap-7 md:gap-12">
+    <nav className="w-full min-w-sm bg-lorenzo-gray dark:bg-lorenzo-dark text-lorenzo-dark dark:text-lorenzo-gray px-5 py-4 lg:px-12 flex items-center justify-between fixed lg:relative z-100">
+      <div className="flex justify-between lg:justify-start w-full gap-7 md:gap-12">
         <div className="cursor-pointer">{svg}</div>
         <div className="flex justify-between items-center gap-10 lg:hidden ">
           <AnimatePresence mode="wait">

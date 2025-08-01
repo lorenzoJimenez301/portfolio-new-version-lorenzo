@@ -10,7 +10,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import SplitText from "../TextAnimations/SplitText/SplitText";
 import RotatingText from "../TextAnimations/RotatingText/RotatingText";
-import TextType from "../TextAnimations/TextType/TextType";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
@@ -23,7 +22,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className="hero lg:h-[54rem] container mx-auto pt-28 flex flex-col lg:flex-row justify-center items-center z-50 relative ">
+      <section className="hero lg:h-[45rem] container mx-auto pt-28 lg:pt-0 flex flex-col lg:flex-row justify-center items-center z-50 relative ">
         <div className="section1 lg:h-full flex-3 flex flex-col justify-center items-center gap-20 py-10 w-full lg:w-auto">
           <div className="text-justify lg:w-[32rem] ">
             <ul className="lg:pl-3 flex justify-center lg:justify-start text-2xl gap-9 w-full py-2">
@@ -46,7 +45,7 @@ export default function Home() {
             <div className="flex items-center justify-center lg:justify-start ">
               <SplitText
                 text="Hello"
-                className="text-[7rem] md:text-[10rem] lg:text-[8rem] xl:text-[9rem] leading-none whitespace-nowrap"
+                className="text-[7rem] md:text-[10rem] lg:text-[8rem] xl:text-[10rem] leading-none whitespace-nowrap"
                 delay={90}
                 duration={0.6}
                 ease="power3.out"
@@ -68,7 +67,7 @@ export default function Home() {
                     "3D Modelator",
                     "UX/UI Designer",
                   ]}
-                  mainClassName="text-center dark:text-lorenzo-dark dark:bg-lorenzo-green p-1 lg:p-2"
+                  mainClassName="text-center bg-lorenzo-dark text-lorenzo-gray dark:text-lorenzo-dark dark:bg-lorenzo-green p-1 lg:p-2"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
@@ -92,7 +91,7 @@ export default function Home() {
               </div>
             </div>
             <div className="h-44 lg:pl-3 hidden lg:flex justify-start items-end">
-              <div>
+              <div className="w-full flex items-center lg:h-20">
                 <button
                   onClick={() => {
                     const seccion = document.getElementById("new-work");
@@ -109,7 +108,7 @@ export default function Home() {
         </div>
         <div className="w-full lg:w-3/6 h-[30rem] sm:h-[30rem] lg:h-full overflow-hidden relative">
           <Image
-            className="object-cover object-center h-[70rem] sm:h-[78rem] md:h-[69rem] lg:h-[100rem] xl:h-[110rem] top-[-3rem] lg:top-[3rem] xl:top-[-3rem] absolute"
+            className="object-cover object-center h-[70rem] sm:h-[78rem] md:h-[69rem] lg:h-[100rem] xl:h-[110rem] top-[-3rem] lg:top-[-3rem] xl:top-[-4rem]  absolute"
             src={"/images/hero-image.png"}
             alt="Hero Image"
             height={2302}
@@ -118,7 +117,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="h-20 flex justify-evenly items-center bg-lorenzo-medigray dark:bg-lorenzo-medidark text-lorenzo-lightgray dark:text-lorenzo-lightdark font-medium text-xl">
+      <section className="h-20 flex justify-evenly items-center bg-lorenzo-medigray dark:bg-lorenzo-medidark text-lorenzo-lightgray dark:text-lorenzo-lightdark font-medium text-md lg:text-xl">
         <p>Design</p>
         <p>Development</p>
         <p>Deploy</p>
@@ -126,9 +125,9 @@ export default function Home() {
       <section id="new-work" className="h-screen max-h-[60rem]">
         <article className=" pt-20 flex flex-col gap-23 justify-center items-center h-screen max-h-[54rem] ">
           <div className=" container mx-auto">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center lg:justify-start gap-4 ">
               <h2 className="text-6xl whitespace-nowrap">Latest Work</h2>
-              <hr className="w-44 bg-lorenzo-dark h-0.5" />
+              <hr className="w-44 bg-lorenzo-dark hidden lg:inline-block h-0.5" />
             </div>
           </div>
           <div className="container mx-auto overflow-hidden">
@@ -145,7 +144,7 @@ export default function Home() {
                       key={project.id}
                       width={1920}
                       height={1080}
-                      className="w-[30rem] pr-10 hover:scale-105 transition-transform duration-300 ease-in-out"
+                      className="w-[30rem] pr-10 hover:scale-105 hover:rotate-2 transition-transform duration-300 ease-in-out"
                       src={project.image}
                       alt="slider image"
                     />
@@ -165,7 +164,7 @@ export default function Home() {
                       key={project.id}
                       width={1920}
                       height={1080}
-                      className="w-[30rem] pr-10 hover:scale-105 transition-transform duration-300 ease-in-out"
+                      className="w-[30rem] pr-10 hover:scale-105 hover:rotate-2 transition-transform duration-300 ease-in-out"
                       src={project.image}
                       alt="slider image"
                       priority
