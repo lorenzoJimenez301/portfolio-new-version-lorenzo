@@ -9,6 +9,7 @@ import "keen-slider/keen-slider.min.css";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import SplitText from "../TextAnimations/SplitText/SplitText";
+import RotatingText from "../TextAnimations/RotatingText/RotatingText";
 import TextType from "../TextAnimations/TextType/TextType";
 
 export default function Home() {
@@ -22,9 +23,9 @@ export default function Home() {
 
   return (
     <main>
-      <section className="hero lg:h-[54rem] container mx-auto pt-28 flex flex-col lg:flex-row justify-center items-center z-50 relative">
-        <div className="section1 flex-3 flex flex-col justify-center items-center gap-20 bg-orange-400 px-4 w-full lg:w-auto">
-          <div className="text-justify">
+      <section className="hero lg:h-[54rem] container mx-auto pt-28 flex flex-col lg:flex-row justify-center items-center z-50 relative ">
+        <div className="section1 lg:h-full flex-3 flex flex-col justify-center items-center gap-20 py-10 w-full lg:w-auto bg-orange-500">
+          <div className="text-justify w-max ">
             <ul className="lg:pl-3 flex justify-center lg:justify-start text-2xl gap-9 w-full py-2">
               <li>
                 <FaNodeJs />
@@ -42,10 +43,10 @@ export default function Home() {
                 <FaFigma />
               </li>
             </ul>
-            <div className="flex items-center justify-center lg:justify-start bg-red-500">
+            <div className="flex items-center justify-center lg:justify-start ">
               <SplitText
                 text="Hello"
-                className="text-[7rem] md:text-[10rem] lg:text-[12.5rem] leading-none whitespace-nowrap"
+                className="text-[7rem] md:text-[10rem] lg:text-[8rem] xl:text-[9rem] leading-none whitespace-nowrap"
                 delay={90}
                 duration={0.6}
                 ease="power3.out"
@@ -57,17 +58,27 @@ export default function Home() {
                 textAlign="center"
               />
             </div>
-            <div className="flex flex-col justify-center items-center lg:items-start lg:pl-3 w-full">
-              <TextType
-                text={[
-                  "I`m Lorenzo, web developer – UX/UI designer – graphic designer",
-                ]}
-                typingSpeed={30}
-                showCursor={true}
-                cursorCharacter="_"
-                className="text-center lg:text-justify md:text-lg lg:text-xl font-semibold max-w-[30rem] lg:max-w-full bg-fuchsia-700"
-                textColors={["var(--foreground)"]}
-              />
+            <div className="flex flex-col justify-center w- items-center lg:items-start lg:pl-3 w-full">
+              <div className="flex items-center justify-center lg:justify-start w-full text-xl md:text-3xl lg:text-[1.9rem]">
+                <p className=" bg-green-600  min-w-max">I`m Lorenzo,</p>
+                <RotatingText
+                  texts={[
+                    "Web Developer",
+                    "Graphic Designer",
+                    "3D Modelator",
+                    "UX/UI Designer",
+                  ]}
+                  mainClassName="w-48 md:w-72 lg:w-full bg-yellow-500  text-center flex justify-center items-center"
+                  staggerFrom={"last"}
+                  initial={{ y: "100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "-120%" }}
+                  staggerDuration={0.025}
+                  splitLevelClassName="overflow-hidden"
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                  rotationInterval={2000}
+                />
+              </div>
               <div className="mt-2 lg:mt-4 hidden lg:flex justify-center gap-4 text-center lg:text-justify">
                 <p className="lg:flex-10/12 font-light text-xs lg:text-base">
                   Creative Web Developer building fast, accessible, and <br />{" "}
@@ -80,23 +91,25 @@ export default function Home() {
                 </button>
               </div>
             </div>
-          </div>
-          <div className="h-20 lg:pl-3 hidden lg:block">
-            <button
-              onClick={() => {
-                const seccion = document.getElementById("new-work");
-                seccion?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="flex flex-col justify-center items-center w-max font-medium group relative"
-            >
-              <p>Scroll Down</p>
-              <RiArrowDownWideLine className="text-3xl top-6 group-hover:mt-3 transition-all duration-200 " />
-            </button>
+            <div className="h-44 bg-green-950 lg:pl-3 hidden lg:flex justify-start items-end">
+              <div>
+                <button
+                  onClick={() => {
+                    const seccion = document.getElementById("new-work");
+                    seccion?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="flex flex-col justify-center items-center w-max font-medium group relative"
+                >
+                  <p>Scroll Down</p>
+                  <RiArrowDownWideLine className="text-3xl top-6 group-hover:mt-3 transition-all duration-200" />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="section2 flex-2/5 relative lg:overflow-hidden lg:h-full">
+        <div className="w-full lg:w-3/6 h-[30rem] sm:h-[30rem] lg:h-full overflow-hidden relative bg-yellow-200">
           <Image
-            className="object-cover object-center lg:scale-[230%] lg:absolute lg:top-[26rem] hidden"
+            className="object-cover object-center h-[70rem] sm:h-[78rem] md:h-[69rem] lg:h-[100rem] xl:h-[110rem] top-[-3rem] lg:top-[3rem] xl:top-[-3rem] absolute"
             src={"/images/hero-image.png"}
             alt="Hero Image"
             height={2302}
@@ -105,7 +118,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className=" h-20 flex justify-evenly items-center bg-lorenzo-medigray dark:bg-lorenzo-medidark text-lorenzo-lightgray dark:text-lorenzo-lightdark font-medium text-xl">
+      <section className="h-20 flex justify-evenly items-center bg-lorenzo-medigray dark:bg-lorenzo-medidark text-lorenzo-lightgray dark:text-lorenzo-lightdark font-medium text-xl">
         <p>Design</p>
         <p>Development</p>
         <p>Deploy</p>

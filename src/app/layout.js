@@ -28,7 +28,7 @@ export const metadata = {
         media: "(prefers-color-scheme: dark)",
       },
     ],
-    apple: "/apple-touch-icon.png",
+    apple: "./apple-icon.png",
   },
   appleWebApp: {
     title: "Portfolio",
@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-title" content="Portfolio" />
       </head>
       <body
-        className={`${roboto.className} antialiased select-none text-lorenzo-dark dark:text-lorenzo-gray`}
+        className={`${roboto.className} antialiased select-none text-lorenzo-dark dark:text-lorenzo-gray min-w-sm`}
       >
         <div className="fixed inset-0 -z-10 pointer-events-none">
           <Particles
