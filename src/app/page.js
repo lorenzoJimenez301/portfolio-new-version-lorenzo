@@ -24,8 +24,8 @@ export default function Home() {
   return (
     <main>
       <section className="hero lg:h-[54rem] container mx-auto pt-28 flex flex-col lg:flex-row justify-center items-center z-50 relative ">
-        <div className="section1 lg:h-full flex-3 flex flex-col justify-center items-center gap-20 py-10 w-full lg:w-auto bg-orange-500">
-          <div className="text-justify w-max ">
+        <div className="section1 lg:h-full flex-3 flex flex-col justify-center items-center gap-20 py-10 w-full lg:w-auto">
+          <div className="text-justify lg:w-[32rem] ">
             <ul className="lg:pl-3 flex justify-center lg:justify-start text-2xl gap-9 w-full py-2">
               <li>
                 <FaNodeJs />
@@ -58,9 +58,9 @@ export default function Home() {
                 textAlign="center"
               />
             </div>
-            <div className="flex flex-col justify-center w- items-center lg:items-start lg:pl-3 w-full">
-              <div className="flex items-center justify-center lg:justify-start w-full text-xl md:text-3xl lg:text-[1.9rem]">
-                <p className=" bg-green-600  min-w-max">I`m Lorenzo,</p>
+            <div className="flex flex-col justify-center items-center lg:items-start lg:pl-3 w-full">
+              <div className="flex items-center justify-center font-semibold lg:justify-start gap-2 w-full text-xl md:text-3xl lg:text-[1.9rem]">
+                <p className=" min-w-max">I`m Lorenzo,</p>
                 <RotatingText
                   texts={[
                     "Web Developer",
@@ -68,7 +68,7 @@ export default function Home() {
                     "3D Modelator",
                     "UX/UI Designer",
                   ]}
-                  mainClassName="w-48 md:w-72 lg:w-full bg-yellow-500  text-center flex justify-center items-center"
+                  mainClassName="text-center dark:text-lorenzo-dark dark:bg-lorenzo-green p-1 lg:p-2"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
@@ -76,7 +76,7 @@ export default function Home() {
                   staggerDuration={0.025}
                   splitLevelClassName="overflow-hidden"
                   transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                  rotationInterval={2000}
+                  rotationInterval={5000}
                 />
               </div>
               <div className="mt-2 lg:mt-4 hidden lg:flex justify-center gap-4 text-center lg:text-justify">
@@ -91,7 +91,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="h-44 bg-green-950 lg:pl-3 hidden lg:flex justify-start items-end">
+            <div className="h-44 lg:pl-3 hidden lg:flex justify-start items-end">
               <div>
                 <button
                   onClick={() => {
@@ -107,7 +107,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-3/6 h-[30rem] sm:h-[30rem] lg:h-full overflow-hidden relative bg-yellow-200">
+        <div className="w-full lg:w-3/6 h-[30rem] sm:h-[30rem] lg:h-full overflow-hidden relative">
           <Image
             className="object-cover object-center h-[70rem] sm:h-[78rem] md:h-[69rem] lg:h-[100rem] xl:h-[110rem] top-[-3rem] lg:top-[3rem] xl:top-[-3rem] absolute"
             src={"/images/hero-image.png"}
