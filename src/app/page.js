@@ -24,98 +24,102 @@ export default function Home() {
 
   return (
     <main>
-      <section className="hero lg:h-[45rem] container mx-auto  flex flex-col lg:flex-row justify-center items-center z-50 relative ">
-        <div className="section1 lg:h-full flex-3 flex flex-col justify-center items-center gap-20 py-10 w-full ">
-          <div className="text-justify lg:pl-14 w-full">
-            <ul className="lg:pl-3 flex justify-center lg:justify-start text-2xl gap-9 w-full py-2">
-              <li>
-                <FaNodeJs />
-              </li>
-              <li>
-                <FaReact />
-              </li>
-              <li>
-                <SiAdobecreativecloud />
-              </li>
-              <li>
-                <SiBlender />
-              </li>
-              <li>
-                <FaFigma />
-              </li>
-            </ul>
-            <div className="flex items-center justify-center lg:justify-start ">
-              <SplitText
-                text="Hello"
-                className="text-[7rem] md:text-[10rem] lg:text-[8rem] xl:text-[10rem] leading-none whitespace-nowrap"
-                delay={90}
-                duration={0.6}
-                ease="power3.out"
-                splitType="chars"
-                from={{ opacity: 0, y: 40 }}
-                to={{ opacity: 1, y: 0 }}
-                threshold={0.1}
-                rootMargin="-100px"
-                textAlign="center"
+      <section className="hero bg-[url('/images/setup-hero.jpg')]  bg-cover bg-center text-lorenzo-gray dark">
+        <div className="bg-lorenzo-dark/50">
+          <div className="container mx-auto h-[50rem] flex flex-col lg:flex-row justify-center items-center z-50 ">
+            <div className="section1 lg:h-full flex-3 flex flex-col justify-center items-center gap-20 py-10 w-full ">
+              <div className="text-justify lg:pl-14 w-full">
+                <ul className="lg:pl-3 flex justify-center lg:justify-start text-2xl gap-9 w-full py-2">
+                  <li>
+                    <FaNodeJs />
+                  </li>
+                  <li>
+                    <FaReact />
+                  </li>
+                  <li>
+                    <SiAdobecreativecloud />
+                  </li>
+                  <li>
+                    <SiBlender />
+                  </li>
+                  <li>
+                    <FaFigma />
+                  </li>
+                </ul>
+                <div className="flex items-center justify-center lg:justify-start ">
+                  <SplitText
+                    text="Hello"
+                    className="text-[7rem] md:text-[10rem] lg:text-[8rem] xl:text-[10rem] leading-none whitespace-nowrap"
+                    delay={90}
+                    duration={0.6}
+                    ease="power3.out"
+                    splitType="chars"
+                    from={{ opacity: 0, y: 40 }}
+                    to={{ opacity: 1, y: 0 }}
+                    threshold={0.1}
+                    rootMargin="-100px"
+                    textAlign="center"
+                  />
+                </div>
+                <div className="flex flex-col justify-center items-center lg:items-start lg:pl-3 w-full">
+                  <div className="flex items-center justify-center font-semibold lg:justify-start gap-2 w-full text-xl md:text-3xl lg:text-[1.4rem] xl:text-3xl">
+                    <p className=" min-w-max">I`m Lorenzo,</p>
+                    <RotatingText
+                      texts={[
+                        "Web Developer",
+                        "Graphic Designer",
+                        "3D Modelator",
+                        "UX/UI Designer",
+                      ]}
+                      mainClassName="text-center bg-lorenzo-green text-lorenzo-dark p-1 lg:p-2"
+                      staggerFrom={"last"}
+                      initial={{ y: "100%" }}
+                      animate={{ y: 0 }}
+                      exit={{ y: "-120%" }}
+                      staggerDuration={0.025}
+                      splitLevelClassName="overflow-hidden"
+                      transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                      rotationInterval={5000}
+                    />
+                  </div>
+                  <div className="mt-2 lg:mt-4 hidden lg:flex justify-center gap-4 text-center lg:text-justify lg:w-80 xl:w-96 ">
+                    <p className="lg:flex-10/12 font-light text-xs lg:text-sm xl:text-base">
+                      Creative Web Developer building fast, accessible, and engaging experiences.
+                    </p>
+                  </div>
+                  <div className="mt-5 flex justify-center lg:justify-start">
+                    <button className=" bg-transparent border border-lorenzo-gray p-3 px-10 font-bold text-xs cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out ">
+                      View Portfolio
+                    </button>
+                  </div>
+                </div>
+                <div className="h-44 lg:h-28 lg:pl-3 hidden lg:flex justify-start items-end">
+                  <div className="w-full flex items-center lg:h-20">
+                    <button
+                      onClick={() => {
+                        const seccion = document.getElementById("new-work");
+                        seccion?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                      className="flex flex-col justify-center items-center w-max font-medium group relative"
+                    >
+                      <p>Scroll Down</p>
+                      <RiArrowDownWideLine className="text-3xl top-6 group-hover:mt-3 transition-all duration-200" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hidden w-full lg:w-3/6 h-[30rem] sm:h-[30rem] lg:h-full overflow-hidden relative">
+              <Image
+                className="hidden object-cover object-center h-[70rem] sm:h-[78rem] md:h-[69rem] lg:h-[100rem] xl:h-[110rem] top-[-3rem] lg:top-[3rem] xl:top-[-4rem]  absolute"
+                src={"/images/hero-image.png"}
+                alt="Hero Image"
+                height={2302}
+                width={2302}
+                priority
               />
             </div>
-            <div className="flex flex-col justify-center items-center lg:items-start lg:pl-3 w-full">
-              <div className="flex items-center justify-center font-semibold lg:justify-start gap-2 w-full text-xl md:text-3xl lg:text-[1.4rem] xl:text-3xl">
-                <p className=" min-w-max">I`m Lorenzo,</p>
-                <RotatingText
-                  texts={[
-                    "Web Developer",
-                    "Graphic Designer",
-                    "3D Modelator",
-                    "UX/UI Designer",
-                  ]}
-                  mainClassName="text-center bg-lorenzo-dark text-lorenzo-gray dark:text-lorenzo-dark dark:bg-lorenzo-green p-1 lg:p-2"
-                  staggerFrom={"last"}
-                  initial={{ y: "100%" }}
-                  animate={{ y: 0 }}
-                  exit={{ y: "-120%" }}
-                  staggerDuration={0.025}
-                  splitLevelClassName="overflow-hidden"
-                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                  rotationInterval={5000}
-                />
-              </div>
-              <div className="mt-2 lg:mt-4 hidden lg:flex justify-center gap-4 text-center lg:text-justify lg:w-80 xl:w-96 ">
-                <p className="lg:flex-10/12 font-light text-xs lg:text-sm xl:text-base">
-                  Creative Web Developer building fast, accessible, and engaging experiences.
-                </p>
-              </div>
-              <div className="mt-5 flex justify-center lg:justify-start">
-                <button className=" bg-transparent border border-lorenzo-dark dark:border-lorenzo-gray p-3 px-10 font-bold text-xs cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out ">
-                  View Portfolio
-                </button>
-              </div>
-            </div>
-            <div className="h-44 lg:h-28 lg:pl-3 hidden lg:flex justify-start items-end">
-              <div className="w-full flex items-center lg:h-20">
-                <button
-                  onClick={() => {
-                    const seccion = document.getElementById("new-work");
-                    seccion?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                  className="flex flex-col justify-center items-center w-max font-medium group relative"
-                >
-                  <p>Scroll Down</p>
-                  <RiArrowDownWideLine className="text-3xl top-6 group-hover:mt-3 transition-all duration-200" />
-                </button>
-              </div>
-            </div>
           </div>
-        </div>
-        <div className="w-full lg:w-3/6 h-[30rem] sm:h-[30rem] lg:h-full overflow-hidden relative">
-          <Image
-            className="object-cover object-center h-[70rem] sm:h-[78rem] md:h-[69rem] lg:h-[100rem] xl:h-[110rem] top-[-3rem] lg:top-[3rem] xl:top-[-4rem]  absolute"
-            src={"/images/hero-image.png"}
-            alt="Hero Image"
-            height={2302}
-            width={2302}
-            priority
-          />
         </div>
       </section>
       <section className="h-20 flex justify-evenly items-center bg-lorenzo-medigray dark:bg-lorenzo-medidark text-lorenzo-lightgray dark:text-lorenzo-lightdark font-medium text-md lg:text-xl">

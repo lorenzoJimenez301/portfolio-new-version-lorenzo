@@ -44,9 +44,9 @@ export const SliderComponent = () => {
   })
 
   return (
-    <div ref={sliderRef} className='keen-slider h-[30rem] min-h-[30rem]!'>
+    <div ref={sliderRef} className='keen-slider h-[30rem]'>
       {datos.map((item) => (
-        <div key={item.id} className='keen-slider__slide number-slide1 h-96 min-h-96!'>
+        <div key={item.id} className='keen-slider__slide number-slide1 h-96 min-h-96'>
           <Image
             className='object-cover object-center h-full hover:scale-125 hover:rotate-6 duration-300 transition-all'
             src={item.image}
