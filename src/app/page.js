@@ -8,7 +8,7 @@ import { RiArrowDownWideLine } from "react-icons/ri";
 import "keen-slider/keen-slider.min.css";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Slider from "./Components/Slider";
+import Slider, { SliderComponent } from "./Components/Slider";
 import SplitText from "../TextAnimations/SplitText/SplitText";
 import RotatingText from "../TextAnimations/RotatingText/RotatingText";
 import { useMediaQuery } from "react-responsive";
@@ -137,7 +137,7 @@ export default function Home() {
           </div>
           <div className="container mx-auto overflow-hidden">
             <div className="flex lg:mask-l-from-70% lg:mask-r-from-70%">
-              <Slider />
+              <SliderComponent />
               {/* <motion.div
                 drag={isMobile ? "x" : false}
                   dragConstraints={{ left: -1000, right: 0 }}
