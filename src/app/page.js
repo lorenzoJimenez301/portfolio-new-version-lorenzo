@@ -7,7 +7,7 @@ import { VscArrowRight } from "react-icons/vsc";
 import { RiArrowDownWideLine } from "react-icons/ri";
 import "keen-slider/keen-slider.min.css";
 import { useEffect, useState } from "react";
-import Slider, { SliderComponent } from "./Components/Slider";
+import { SliderComponent } from "./Components/Slider";
 import SplitText from "../TextAnimations/SplitText/SplitText";
 import RotatingText from "../TextAnimations/RotatingText/RotatingText";
 import { useMediaQuery } from "react-responsive";
@@ -26,7 +26,7 @@ export default function Home() {
     <main>
       <section className="hero lg:h-[45rem] container mx-auto  flex flex-col lg:flex-row justify-center items-center z-50 relative ">
         <div className="section1 lg:h-full flex-3 flex flex-col justify-center items-center gap-20 py-10 w-full ">
-          <div className="text-justify pl-14 w-full">
+          <div className="text-justify lg:pl-14 w-full">
             <ul className="lg:pl-3 flex justify-center lg:justify-start text-2xl gap-9 w-full py-2">
               <li>
                 <FaNodeJs />
