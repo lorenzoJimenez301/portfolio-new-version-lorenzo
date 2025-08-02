@@ -6,6 +6,7 @@ import { FaBehanceSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,118 +31,120 @@ export const Navbar = () => {
   );
 
   return (
-    <nav className="w-full min-w-sm bg-lorenzo-gray dark:bg-lorenzo-dark text-lorenzo-dark dark:text-lorenzo-gray px-5 py-4 lg:px-12 flex items-center justify-between fixed lg:relative z-100">
-      <div className="flex justify-between lg:justify-start w-full gap-7 md:gap-12">
-        <div className="cursor-pointer">{svg}</div>
-        <div className="flex justify-between items-center gap-10 lg:hidden ">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={isOpen ? "close" : "menu"}
-              initial={{ opacity: 1, rotate: 0 }}
-              animate={{ opacity: 1, rotate: 180 }}
-              transition={{ duration: 0.3 }}
-              onClick={() => setIsOpen(!isOpen)}
-              className="cursor-pointer"
-            >
-              {isOpen ? (
-                <RiCloseLargeFill className="text-4xl" />
-              ) : (
-                <RiMenuFill className="text-4xl" />
-              )}
-            </motion.div>
+    <header>
+      <nav className="w-full min-w-sm bg-lorenzo-gray dark:bg-lorenzo-dark text-lorenzo-dark dark:text-lorenzo-gray px-5 py-4 lg:px-12 flex items-center justify-between fixed lg:relative z-100 top-0">
+        <div className="flex justify-between lg:justify-start w-full gap-7 md:gap-12">
+          <div className="cursor-pointer">{svg}</div>
+          <div className="flex justify-between items-center gap-10 lg:hidden ">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={isOpen ? "close" : "menu"}
+                initial={{ opacity: 1, rotate: 0 }}
+                animate={{ opacity: 1, rotate: 180 }}
+                transition={{ duration: 0.3 }}
+                onClick={() => setIsOpen(!isOpen)}
+                className="cursor-pointer"
+              >
+                {isOpen ? (
+                  <RiCloseLargeFill className="text-4xl" />
+                ) : (
+                  <RiMenuFill className="text-4xl" />
+                )}
+              </motion.div>
+            </AnimatePresence>
+          </div>
+          <AnimatePresence>
+            {isOpen && (
+              <motion.ul
+                initial={{ x: -1000 }}
+                animate={{ x: -20 }}
+                exit={{
+                  x: -1000,
+                  transition: { duration: 0.3 },
+                }}
+                transition={{
+                  type: "spring",
+                  bounce: 0,
+                  duration: 0.3,
+                }}
+                className="uppercase absolute top-[5rem] flex lg:hidden flex-col lg:flex-row lg:items-center gap-8 lg:gap-10 w-full z-50 px-8 py-10 md:p-10 bg-lorenzo-gray dark:bg-lorenzo-dark shadow-lg"
+              >
+                <li className="h-max">
+                  <Link className="group" href="/">
+                    HOME
+                    <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
+                  </Link>
+                </li>
+                <li className="h-max">
+                  <a className="group" href="/about">
+                    ABOUT
+                    <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
+                  </a>
+                </li>
+                <li className="h-max">
+                  <a className="group" href="">
+                    WORK
+                    <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
+                  </a>
+                </li>
+                <li className="h-max">
+                  <a className="group" href="">
+                    CONTACT
+                    <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
+                  </a>
+                </li>
+              </motion.ul>
+            )}
           </AnimatePresence>
+          <ul className="desktop hidden uppercase lg:flex flex-col md:flex-row md:items-center relative z-50 lg:gap-5">
+            <li className="flex items-center h-max w-18 ">
+              <Link
+                className="inline-block hover:font-black transition-all duration-200 group"
+                href="/"
+              >
+                HOME
+              </Link>
+            </li>
+            <li className="flex items-center h-max w-18 ">
+              <a
+                className="inline-block hover:font-black transition-all duration-200 group"
+                href="/about"
+              >
+                ABOUT
+              </a>
+            </li>
+            <li className="flex items-center h-max w-18 ">
+              <a
+                className="inline-block hover:font-black transition-all duration-300 group"
+                href="/"
+              >
+                WORK
+              </a>
+            </li>
+            <li className="flex items-center h-max w-18 ">
+              <a
+                className="inline-block hover:font-black transition-all duration-200 group"
+                href="/"
+              >
+                CONTACT
+              </a>
+            </li>
+          </ul>
         </div>
-        <AnimatePresence>
-          {isOpen && (
-            <motion.ul
-              initial={{ x: -1000 }}
-              animate={{ x: -20 }}
-              exit={{
-                x: -1000,
-                transition: { duration: 0.3 },
-              }}
-              transition={{
-                type: "spring",
-                bounce: 0,
-                duration: 0.3,
-              }}
-              className="uppercase absolute top-[5rem] flex lg:hidden flex-col lg:flex-row lg:items-center gap-8 lg:gap-10 w-full z-50 px-8 py-10 md:p-10 bg-lorenzo-gray dark:bg-lorenzo-dark shadow-lg"
-            >
-              <li className="h-max">
-                <a className="group" href="">
-                  HOME
-                  <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
-                </a>
-              </li>
-              <li className="h-max">
-                <a className="group" href="">
-                  ABOUT
-                  <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
-                </a>
-              </li>
-              <li className="h-max">
-                <a className="group" href="">
-                  WORK
-                  <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
-                </a>
-              </li>
-              <li className="h-max">
-                <a className="group" href="">
-                  CONTACT
-                  <hr className="hidden md:block w-0 rounded-full h-[2px] bg-black border-0 group-hover:w-full transition-all duration-300" />
-                </a>
-              </li>
-            </motion.ul>
-          )}
-        </AnimatePresence>
-        <ul className="desktop hidden uppercase lg:flex flex-col md:flex-row md:items-center relative z-50 lg:gap-5">
-          <li className="flex items-center h-max w-18 ">
-            <a
-              className="inline-block hover:font-black transition-all duration-200 group"
-              href="/"
-            >
-              HOME
-            </a>
-          </li>
-          <li className="flex items-center h-max w-18 ">
-            <a
-              className="inline-block hover:font-black transition-all duration-200 group"
-              href="/"
-            >
-              ABOUT
-            </a>
-          </li>
-          <li className="flex items-center h-max w-18 ">
-            <a
-              className="inline-block hover:font-black transition-all duration-300 group"
-              href="/"
-            >
-              WORK
-            </a>
-          </li>
-          <li className="flex items-center h-max w-18 ">
-            <a
-              className="inline-block hover:font-black transition-all duration-200 group"
-              href="/"
-            >
-              CONTACT
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className="hidden lg:flex items-center">
-        <ul className="flex items-center space-x-7">
-          <li className="hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110">
-            <FaBehanceSquare />
-          </li>
-          <li>
-            <FaGithub className="hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110" />
-          </li>
-          <li>
-            <FaLinkedin className="hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110" />
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div className="hidden lg:flex items-center">
+          <ul className="flex items-center space-x-7">
+            <li className="hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110">
+              <FaBehanceSquare />
+            </li>
+            <li>
+              <FaGithub className="hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110" />
+            </li>
+            <li>
+              <FaLinkedin className="hover:scale-125 transition-scale duration-200 ease-out text-2xl active:scale-110" />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   );
 };

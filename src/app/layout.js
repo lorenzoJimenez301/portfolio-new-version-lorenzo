@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-title" content="Portfolio" />
       </head>
       <body
-        className={`${roboto.className} antialiased select-none text-lorenzo-dark dark:text-lorenzo-gray min-w-sm`}
+        className={`${roboto.className} antialiased select-none text-lorenzo-dark dark:text-lorenzo-gray min-w-sm dark:bg-lorenzo-dark bg-lorenzo-gray`}
       >
         <div className="fixed inset-0 -z-10 pointer-events-none">
           <Particles

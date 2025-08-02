@@ -8,11 +8,14 @@ import { RiArrowDownWideLine } from "react-icons/ri";
 import "keen-slider/keen-slider.min.css";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Slider from "./Components/Slider";
 import SplitText from "../TextAnimations/SplitText/SplitText";
 import RotatingText from "../TextAnimations/RotatingText/RotatingText";
+import { useMediaQuery } from "react-responsive";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
+  const isMobile = useMediaQuery({ maxWidth: 1028 });
 
   useEffect(() => {
     fetch("/data/projects.json")
@@ -108,7 +111,7 @@ export default function Home() {
         </div>
         <div className="w-full lg:w-3/6 h-[30rem] sm:h-[30rem] lg:h-full overflow-hidden relative">
           <Image
-            className="object-cover object-center h-[70rem] sm:h-[78rem] md:h-[69rem] lg:h-[100rem] xl:h-[110rem] top-[-3rem] lg:top-[-3rem] xl:top-[-4rem]  absolute"
+            className="object-cover object-center h-[70rem] sm:h-[78rem] md:h-[69rem] lg:h-[100rem] xl:h-[110rem] top-[-3rem] lg:top-[3rem] xl:top-[-4rem]  absolute"
             src={"/images/hero-image.png"}
             alt="Hero Image"
             height={2302}
@@ -126,13 +129,18 @@ export default function Home() {
         <article className=" pt-20 flex flex-col gap-23 justify-center items-center h-screen max-h-[54rem] ">
           <div className=" container mx-auto">
             <div className="flex items-center justify-center lg:justify-start gap-4 ">
-              <h2 className="text-6xl whitespace-nowrap">Latest Work</h2>
+              <h2 className=" text-5xl lg:text-6xl whitespace-nowrap">
+                Latest Work
+              </h2>
               <hr className="w-44 bg-lorenzo-dark hidden lg:inline-block h-0.5" />
             </div>
           </div>
           <div className="container mx-auto overflow-hidden">
-            <div className="flex mask-slider mask-slider2">
-              <motion.div
+            <div className="flex lg:mask-l-from-70% lg:mask-r-from-70%">
+              <Slider />
+              {/* <motion.div
+                drag={isMobile ? "x" : false}
+                  dragConstraints={{ left: -1000, right: 0 }}
                 initial={{ x: 0 }}
                 animate={{ x: "-100%" }}
                 transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
@@ -151,8 +159,9 @@ export default function Home() {
                   );
                 })}
               </motion.div>
-
               <motion.div
+                drag={isMobile ? "x" : false}
+                  dragConstraints={{ left: -1000, right: 0 }}
                 initial={{ x: 0 }}
                 animate={{ x: "-100%" }}
                 transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
@@ -171,7 +180,7 @@ export default function Home() {
                     />
                   );
                 })}
-              </motion.div>
+              </motion.div> */}
             </div>
           </div>
           <div>

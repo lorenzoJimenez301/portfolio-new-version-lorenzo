@@ -6,26 +6,28 @@ import AnimatedCursor from 'react-animated-cursor'
 import { useEffect, useState } from 'react'
 
 export const CursorCustom = () => {
-  const isMobile = useMediaQuery({ maxWidth: 1024 })
-  const [mounted, setMounted] = useState(false)
+  // const isMobile = useMediaQuery({ maxWidth: 1024 })
+  // const [mounted, setMounted] = useState(false)
 
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  // useEffect(() => {
+  //   setMounted(true)
+  // }, [])
 
-  useEffect(() => {
-    if (mounted) {
-      document.body.style.cursor = isMobile ? 'auto' : 'none'
-    }
-  }, [isMobile, mounted])
+  // useEffect(() => {
+  //   if (mounted) {
+  //     document.body.style.cursor = isMobile ? 'auto' : 'none'
+  //   }
+  // }, [isMobile, mounted])
 
-  // Evita renderizar nada hasta estar montado
-  if (!mounted || isMobile) return null
+  // if (!mounted || isMobile) return null
+
+  const isMobile = useMediaQuery({ query: '(max-width: 1024px)' })
 
   return (
     <AnimatedCursor
+      showSystemCursor={isMobile}
       color={'230,230,230'}
-      innerStyle={{backgroundColor: 'var(--background)'}}
+      innerStyle={{ backgroundColor: 'var(--background)'}}
       innerSize={10}
       outerSize={30}
       outerAlpha={1}
@@ -33,7 +35,7 @@ export const CursorCustom = () => {
       outerScale={1.5}
       trailingSpeed={1}
       outerStyle={{
-        mixBlendMode: 'exclusion'
+        mixBlendMode: 'exclusion',
       }}
       clickables={['a', 'svg', 'button']}
     />
