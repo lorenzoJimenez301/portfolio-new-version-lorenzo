@@ -24,9 +24,17 @@ export default function Home() {
 
   return (
     <main>
-      <section className="hero bg-[url('/images/setup-hero.jpg')]  bg-cover bg-center text-lorenzo-gray dark">
-        <div className="bg-lorenzo-dark/50">
-          <div className="container mx-auto h-[50rem] flex flex-col lg:flex-row justify-center items-center z-50 ">
+      <section className="hero relative overflow-hidden text-lorenzo-gray dark">
+        <Image
+          className="absolute object-cover object-center -z-10"
+          src={"/images/setup-hero.jpg"}
+          alt="hero-image"
+          fill
+          priority
+          quality={80}
+        />
+        <div className="bg-lorenzo-dark/50 h-full">
+          <div className="container mx-auto h-[50rem]   flex flex-col lg:flex-row justify-center items-center z-50 ">
             <div className="section1 lg:h-full flex-3 flex flex-col justify-center items-center gap-20 py-10 w-full ">
               <div className="text-justify lg:pl-14 w-full">
                 <ul className="lg:pl-3 flex justify-center lg:justify-start text-2xl gap-9 w-full py-2">
@@ -78,13 +86,18 @@ export default function Home() {
                       exit={{ y: "-120%" }}
                       staggerDuration={0.025}
                       splitLevelClassName="overflow-hidden"
-                      transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                      transition={{
+                        type: "spring",
+                        damping: 30,
+                        stiffness: 400,
+                      }}
                       rotationInterval={5000}
                     />
                   </div>
                   <div className="mt-2 lg:mt-4 hidden lg:flex justify-center gap-4 text-center lg:text-justify lg:w-80 xl:w-96 ">
                     <p className="lg:flex-10/12 font-light text-xs lg:text-sm xl:text-base">
-                      Creative Web Developer building fast, accessible, and engaging experiences.
+                      Creative Web Developer building fast, accessible, and
+                      engaging experiences.
                     </p>
                   </div>
                   <div className="mt-5 flex justify-center lg:justify-start">
