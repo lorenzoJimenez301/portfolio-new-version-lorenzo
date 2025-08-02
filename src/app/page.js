@@ -7,7 +7,6 @@ import { VscArrowRight } from "react-icons/vsc";
 import { RiArrowDownWideLine } from "react-icons/ri";
 import "keen-slider/keen-slider.min.css";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import Slider, { SliderComponent } from "./Components/Slider";
 import SplitText from "../TextAnimations/SplitText/SplitText";
 import RotatingText from "../TextAnimations/RotatingText/RotatingText";
@@ -25,9 +24,9 @@ export default function Home() {
 
   return (
     <main>
-      <section className="hero lg:h-[45rem] container mx-auto pt-28 lg:pt-0 flex flex-col lg:flex-row justify-center items-center z-50 relative ">
-        <div className="section1 lg:h-full flex-3 flex flex-col justify-center items-center gap-20 py-10 w-full lg:w-auto">
-          <div className="text-justify lg:w-[32rem] ">
+      <section className="hero lg:h-[45rem] container mx-auto  flex flex-col lg:flex-row justify-center items-center z-50 relative ">
+        <div className="section1 lg:h-full flex-3 flex flex-col justify-center items-center gap-20 py-10 w-full ">
+          <div className="text-justify pl-14 w-full">
             <ul className="lg:pl-3 flex justify-center lg:justify-start text-2xl gap-9 w-full py-2">
               <li>
                 <FaNodeJs />
@@ -61,7 +60,7 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col justify-center items-center lg:items-start lg:pl-3 w-full">
-              <div className="flex items-center justify-center font-semibold lg:justify-start gap-2 w-full text-xl md:text-3xl lg:text-[1.9rem]">
+              <div className="flex items-center justify-center font-semibold lg:justify-start gap-2 w-full text-xl md:text-3xl lg:text-[1.4rem] xl:text-3xl">
                 <p className=" min-w-max">I`m Lorenzo,</p>
                 <RotatingText
                   texts={[
@@ -81,10 +80,9 @@ export default function Home() {
                   rotationInterval={5000}
                 />
               </div>
-              <div className="mt-2 lg:mt-4 hidden lg:flex justify-center gap-4 text-center lg:text-justify">
-                <p className="lg:flex-10/12 font-light text-xs lg:text-base">
-                  Creative Web Developer building fast, accessible, and <br />{" "}
-                  engaging experiences.
+              <div className="mt-2 lg:mt-4 hidden lg:flex justify-center gap-4 text-center lg:text-justify lg:w-80 xl:w-96 ">
+                <p className="lg:flex-10/12 font-light text-xs lg:text-sm xl:text-base">
+                  Creative Web Developer building fast, accessible, and engaging experiences.
                 </p>
               </div>
               <div className="mt-5 flex justify-center lg:justify-start">
@@ -93,7 +91,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="h-44 lg:pl-3 hidden lg:flex justify-start items-end">
+            <div className="h-44 lg:h-28 lg:pl-3 hidden lg:flex justify-start items-end">
               <div className="w-full flex items-center lg:h-20">
                 <button
                   onClick={() => {
@@ -125,8 +123,8 @@ export default function Home() {
         <p>Development</p>
         <p>Deploy</p>
       </section>
-      <section id="new-work" className="h-screen max-h-[60rem]">
-        <article className=" pt-20 flex flex-col gap-23 justify-center items-center h-screen max-h-[54rem] ">
+      <section id="new-work" className="h-[60rem]">
+        <article className=" pt-20 flex flex-col gap-23 justify-center items-center h-[55rem] ">
           <div className=" container mx-auto">
             <div className="flex items-center justify-center lg:justify-start gap-4 ">
               <h2 className=" text-5xl lg:text-6xl whitespace-nowrap">
@@ -135,52 +133,9 @@ export default function Home() {
               <hr className="w-44 bg-lorenzo-dark hidden lg:inline-block h-0.5" />
             </div>
           </div>
-          <div className="container mx-auto overflow-hidden">
+          <div className="container mx-auto relative">
             <div className="flex lg:mask-l-from-70% lg:mask-r-from-70%">
               <SliderComponent />
-              {/* <motion.div
-                drag={isMobile ? "x" : false}
-                  dragConstraints={{ left: -1000, right: 0 }}
-                initial={{ x: 0 }}
-                animate={{ x: "-100%" }}
-                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                className="flex flex-shrink-0"
-              >
-                {projects.map((project) => {
-                  return (
-                    <Image
-                      key={project.id}
-                      width={1920}
-                      height={1080}
-                      className="w-[30rem] pr-10 hover:scale-105 hover:rotate-2 transition-transform duration-300 ease-in-out"
-                      src={project.image}
-                      alt="slider image"
-                    />
-                  );
-                })}
-              </motion.div>
-              <motion.div
-                drag={isMobile ? "x" : false}
-                  dragConstraints={{ left: -1000, right: 0 }}
-                initial={{ x: 0 }}
-                animate={{ x: "-100%" }}
-                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                className="flex flex-shrink-0"
-              >
-                {projects.map((project) => {
-                  return (
-                    <Image
-                      key={project.id}
-                      width={1920}
-                      height={1080}
-                      className="w-[30rem] pr-10 hover:scale-105 hover:rotate-2 transition-transform duration-300 ease-in-out"
-                      src={project.image}
-                      alt="slider image"
-                      priority
-                    />
-                  );
-                })}
-              </motion.div> */}
             </div>
           </div>
           <div>

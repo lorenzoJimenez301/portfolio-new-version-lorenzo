@@ -4,13 +4,12 @@ import React, { useEffect, useState } from 'react'
 import { useKeenSlider } from 'keen-slider/react'
 import Image from 'next/image'
 import 'keen-slider/keen-slider.min.css'
-import datos from '@/data/projects.json'
+import datos from '../../../public/data/projects.json'
 
 const animation = { duration: 20000, easing: t => t }
 
 export const SliderComponent = () => {
-  const [data, setData] = useState(datos)
-
+  
   const [sliderRef] = useKeenSlider({
     loop: true,
     slides: {
@@ -44,26 +43,17 @@ export const SliderComponent = () => {
     }
   })
 
-  // useEffect(() => {
-  //   const getData = async () => {
-  //     const res = await fetch('/data/projects.json')
-  //     const data = await res.json()
-  //     setData(data)
-  //   }
-
-  //   getData()
-  // }, [])
-
   return (
-    <div ref={sliderRef} className='keen-slider h-96 min-h-96 '>
-      {data.map((item, index) => (
-        <div key={index} className='keen-slider__slide number-slide1'>
+    <div ref={sliderRef} className='keen-slider h-[30rem] min-h-[30rem]!'>
+      {datos.map((item) => (
+        <div key={item.id} className='keen-slider__slide number-slide1 h-96 min-h-96!'>
           <Image
             className='object-cover object-center h-full hover:scale-125 hover:rotate-6 duration-300 transition-all'
             src={item.image}
             width={1920}
             height={1080}
             alt='slider image'
+            priority
           />
         </div>
       ))}
