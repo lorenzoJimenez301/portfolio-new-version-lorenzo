@@ -6,3 +6,4 @@
 public/videos/*.mp4 filter=lfs diff=lfs merge=lfs -text
 {pattern} filter=lfs diff=lfs merge=lfs -text
 public/videos/Video_MT-03_Full.mp4 filter=lfs diff=lfs merge=lfs -text
+public/videos/Video[[:space:]]MT-03[[:space:]]Full.mp4 filter=lfs diff=lfs merge=lfs -text
