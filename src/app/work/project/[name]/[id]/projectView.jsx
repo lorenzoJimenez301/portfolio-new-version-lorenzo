@@ -74,7 +74,6 @@ export const ProjectPage = ({ project }) => {
       </div>
     ),
     'Graphic Design': (
-
       <article className='h-auto lg:h-[50rem] flex justify-center items-center '>
         <video
           poster={project.blurDataURL}
@@ -82,7 +81,7 @@ export const ProjectPage = ({ project }) => {
           loop
           playsInline
           controls
-          className='h-full w-full max-w-sm object-center z-0'
+          className='h-full w-full max-w-sm md:max-w-full object-center z-0'
           src={project.video}
         />
       </article>
