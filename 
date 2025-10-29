@@ -1,0 +1,296 @@
+[33mcommit c63b84f185957ab41b212daf5f1ddb6245fea7ac[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Tue Sep 2 15:31:15 2025 -0600
+
+    dark mode
+
+[33mcommit 87244e25ad6348cb6c6809c99eb2d3bd3c4fd637[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Mon Sep 1 23:01:25 2025 -0600
+
+    yogurt
+
+[33mcommit 055ff648aa13915f76e1f5e81005ea4428a3e8fe[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Mon Sep 1 16:19:38 2025 -0600
+
+    Optimizacion de imagenes
+
+[33mcommit 649859512823e1f216fee77b0ec59a06e5e6b7bc[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Sat Aug 30 23:01:32 2025 -0600
+
+    Ultimos retoques
+
+[33mcommit 333cad82065aa85a540f8483ae1082bc8fb0591c[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Fri Aug 29 16:21:28 2025 -0600
+
+    Casi Casi terminadad
+
+[33mcommit 476aecc352137a59c0f6ffabf13a815503d7a6f7[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Thu Aug 28 23:06:26 2025 -0600
+
+    Modelos Casi terminados
+
+[33mcommit 6dc773b80bf67d8c48537ae541384a8b032d101c[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Thu Aug 28 16:38:45 2025 -0600
+
+    3D Optimizacion
+
+[33mcommit 838ac08549daa333f62f2d8d395d92a8a4bfdb5d[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Wed Aug 27 23:29:15 2025 -0600
+
+    3d aumento
+
+[33mcommit 26c398818cfe70cf7ebd81e8568c1781eee6cd96[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Tue Aug 26 20:21:17 2025 -0600
+
+    3D configurated
+
+[33mcommit 0de8ad5f27a484b3b8299d65901817d87a2a6585[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Tue Aug 26 17:14:41 2025 -0600
+
+    3D implementation
+
+[33mcommit 9ff5d1e935b2437ec7f10d0762961e8171560f6c[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Tue Aug 26 15:18:48 2025 -0600
+
+    Agrego modelos 3D con LFS
+
+[33mcommit 848e935dec63e8c49243c2bee8bb6baa590e6a91[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Mon Aug 25 13:58:44 2025 -0600
+
+    hola 301
+
+[33mcommit c5f272c284eab13fc058821fdac372713719d566[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Mon Aug 25 13:45:57 2025 -0600
+
+    Hola
+
+[33mcommit 65fbf0ad986c2061695f37872b5066c5fb9df2da[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Mon Aug 25 13:36:52 2025 -0600
+
+    prueba
+
+[33mcommit 6f4d839f09e32c410a58386c3e477e1ebb2160ce[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Mon Aug 25 13:19:14 2025 -0600
+
+    Contacto
+
+[33mcommit 314db85573f5b2fead28ffe3b67b97079f80c301[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Fri Aug 22 17:25:34 2025 -0600
+
+    contact
+
+[33mcommit dc2ebd4a077e148e1d0def5d7215c352edb8ad1c[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Fri Aug 22 13:00:51 2025 -0600
+
+    contact
+
+[33mcommit 4d8f4355165fa75d0be522c802328a2151c9b3f1[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Tue Aug 19 17:12:06 2025 -0600
+
+    Contact Casi listo
+
+[33mcommit 8074401e4567587e203f2d74ca0b0d2193dbb791[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Mon Aug 18 22:33:57 2025 -0600
+
+    Work
+
+[33mcommit 2d10aacf39dedfaa406773c8057e56fb11c8c809[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Mon Aug 18 21:30:17 2025 -0600
+
+    Video Solucionado
+
+[33mcommit ea7b123537856dbb583a2434eaaa86d85f2acb2f[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Mon Aug 18 20:54:36 2025 -0600
+
+    Env
+
+[33mcommit aeae028d8b877cb03d93aa2ce7a056bed5a045b2[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Mon Aug 18 13:02:08 2025 -0600
+
+    Formulario contacto
+
+[33mcommit 50e8a26d5c9cc885caa909b73a8d606ba58f9c13[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Fri Aug 15 17:59:33 2025 -0600
+
+    Contract
+
+[33mcommit d17fff0d53d849e288181d8e8ed04a8e6342bbb1[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Fri Aug 15 09:53:00 2025 -0600
+
+    base64 Work
+
+[33mcommit 4c213d0b79c552000bb97039b44f60f7ac134f99[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Fri Aug 15 08:57:08 2025 -0600
+
+    Prueba64
+
+[33mcommit 25f14e6b75f8c333e4f9f452046de12d297160c9[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Thu Aug 14 18:43:51 2025 -0600
+
+    work casi finalizado
+
+[33mcommit 1687bea144de688cb93c170fd45f68b826134f0d[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Wed Aug 13 22:36:52 2025 -0600
+
+    filter
+
+[33mcommit 2d2f0406705e8281c48324cf7850688460df88c5[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Wed Aug 13 17:07:25 2025 -0600
+
+    params
+
+[33mcommit 956159ce946e43f05f2fc1c232ba2b6cd883e439[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Wed Aug 13 13:02:13 2025 -0600
+
+    Loading
+
+[33mcommit 19619fcdd7b261c149a0c9cb0700256f1210affc[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Tue Aug 12 22:40:49 2025 -0600
+
+    params
+
+[33mcommit 262d0f7480ac46d366ce941d42c3b657d902021f[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Tue Aug 12 17:02:18 2025 -0600
+
+    Work Animation
+
+[33mcommit 5c549bfff7ccbcda4b2af0f32bfdc0ca389773ff[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Tue Aug 12 12:53:51 2025 -0600
+
+    Work
+
+[33mcommit 7b7612cf6dc935fb37f7ba06d1542858cf1b76dc[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Mon Aug 11 21:07:28 2025 -0600
+
+    Pokemon
+
+[33mcommit 29da20c8874d2fa7aaaf76ef47556f2856d53275[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Mon Aug 11 17:12:06 2025 -0600
+
+    holap
+
+[33mcommit 0da91b1b35b4031f4cc5798303ece37545bba997[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Mon Aug 11 14:27:18 2025 -0600
+
+    About Optimizada
+
+[33mcommit c6e75aa241e96dd99b6ee667eead643f081f3e6f[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Sun Aug 10 16:48:33 2025 -0600
+
+    About Responsive
+
+[33mcommit d34539855c50fb532376d7e5c7b1e073736f3f19[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Sun Aug 10 09:35:51 2025 -0600
+
+    image about
+
+[33mcommit f20acc9737cc11e1802ef91972441de6b3bc12fc[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Sat Aug 9 23:44:13 2025 -0600
+
+    Hola 301
+
+[33mcommit a6953bde53856bda1d1440b1a1b5d85369a21d2b[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Sat Aug 9 00:14:54 2025 -0600
+
+    14 pro max
+
+[33mcommit 51cb734b6f5105f83c5ec346144eeaf8ff549375[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Fri Aug 8 17:18:16 2025 -0600
+
+    About Mobile Terminado
+
+[33mcommit 6491422cef28d4dcd6403773a3c7410a2b22d311[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Fri Aug 8 16:35:17 2025 -0600
+
+    About 4.0
+
+[33mcommit 070a57b59dce16c7a9fc538f5b9657bbf91a5270[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Fri Aug 8 11:36:26 2025 -0600
+
+    About 3.0
+
+[33mcommit 9ab8dfc6e1441f84f59f3f3667c3a0eeb2aaf1dc[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Thu Aug 7 22:24:38 2025 -0600
+
+    menu adelantado
+
+[33mcommit 3e6eb3e95d536ad09ce82f8d851197d4ad6f5eac[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Thu Aug 7 17:15:40 2025 -0600
+
+    Menu About
+
+[33mcommit b839df6af43bd2fb22c81340075b48988085bdf7[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Thu Aug 7 13:58:04 2025 -0600
+
+    section about
+
+[33mcommit e8c1fb77999912205f022304c81b326061e92910[m
+Author: Lorenzo Jiménez Abarca <ljimenez@TAP.LOCAL>
+Date:   Thu Aug 7 10:50:23 2025 -0600
+
+    sliderAbout
+
+[33mcommit b9483ea6d7ebd0b2c25562e19fc19f4ec37b0b26[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Wed Aug 6 22:59:15 2025 -0600
+
+    About 2.0
+
+[33mcommit e19f9c300d3a30e5c196a135b41739e227b6dd48[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Wed Aug 6 22:52:28 2025 -0600
+
+    About
+
+[33mcommit 2c73f5e52e9ba3a5aeb04c53c9ff2af557d2ba49[m
+Author: Lorenzo <lorenzojimenez815@gmail.com>
+Date:   Wed Aug 6 19:41:16 2025 -0600
+
+    Backend
+
+[33mcommit 6a2312eb97fa8cbe370df346c88050f917de53f3[m
+Author: Lorenzo <lorenzojimenez815@gmail.c

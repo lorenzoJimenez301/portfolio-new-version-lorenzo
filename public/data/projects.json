@@ -1,0 +1,197 @@
+[
+  {
+    "id": 0,
+    "name": "Razer 3D Model",
+    "category": "3D Model",
+    "link": "razer-3d-model",
+    "desc": "High-quality 3D model of Razer gaming headphones, featuring realistic materials, precise details, and a sleek design—ideal for product renders and visualizations.",
+    "scale": 1.1,
+    "image1": "/images/images-projects/Razer-headphones/razer1.png",
+    "image2": "/images/images-projects/Razer-headphones/razer3.jpg",
+    "image3": "/images/images-projects/Razer-headphones/razer2.jpg",
+    "image4": "/images/images-projects/Razer-headphones/razer4.jpg",
+    "video": "/videos/razer-video.webm",
+    "model": "/models/razer.glb",
+    "tecnoUsed": [
+      { "name": "Blender", "icon": "SiBlender" },
+      { "name": "Ilustrator", "icon": "SiAdobeillustrator" },
+      { "name": "Photoshop", "icon": "SiAdobephotoshop" }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Boom Brand Design",
+    "category": "3D Model",
+    "link": "boom-brand-design",
+    "desc": "Brand identity and packaging design for Boom, a sparkling water brand. The project includes logo design, label creation, and 3D modeling of the bottle to showcase the product's refreshing and vibrant image.",
+    "scale": 10,
+    "image1": "/images/images-projects/boom/boom1.jpg",
+    "image2": "/images/images-projects/boom/boom2.jpg",
+    "image3": "/images/images-projects/boom/boom3.jpg",
+    "image4": "/images/images-projects/boom/boom4.jpg",
+    "video": null,
+    "model": "/models/boom.glb",
+    "tecnoUsed": [
+      { "name": "Blender", "icon": "SiBlender" },
+      { "name": "Ilustrator", "icon": "SiAdobeillustrator" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Nike UX/UI Design",
+    "category": "Web Project",
+    "link": "nike-ux-ui-design",
+    "desc": "A clean and modern web concept inspired by Nike, showcasing the Air Force 1 with minimal design, bold typography, and a clear call-to-action. Built with Next.js and Tailwind CSS for a responsive and smooth user experience.",
+    "scale": null,
+    "image1": "/images/images-projects/nike-ux/nike1.webp",
+    "image2": "/images/images-projects/nike-ux/nike2.webp",
+    "image3": "/images/images-projects/nike-ux/nike3.jpg",
+    "image4": "/images/images-projects/nike-ux/nike5.jpg",
+    "video": null,
+    "model": null,
+    "github": "https://github.com/lorenzoJimenez301/nike-web-page.git",
+    "netlify": "https://nike-web-page-lorenzo-jimenez.netlify.app/",
+    "tecnoUsed": [
+      { "name": "Next.js", "icon": "SiNextdotjs" },
+      { "name": "Netlify", "icon": "SiNetlify" },
+      { "name": "Tailwind CSS", "icon": "SiTailwindcss" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Yogurt brand design & 3D Model",
+    "category": "3D Model",
+    "link": "yogurt-brand-design-3d-model",
+    "desc": "Brand identity and packaging design for a yogurt brand. The project includes logo design, label creation, and 3D modeling of the yogurt cup to showcase the product's appealing and fresh image.",
+    "scale": 25,
+    "image1": "/images/images-projects/yogurt-dp/yogurt4.jpg",
+    "image2": "/images/images-projects/yogurt-dp/yogurt3.jpg",
+    "image3": "/images/images-projects/yogurt-dp/yogurt2.jpg",
+    "image4": "/images/images-projects/yogurt-dp/yogurt4.jpg",
+    "video": "/videos/yogurt1.mp4",
+    "model": "/models/yogurt.glb",
+    "tecnoUsed": [
+      { "name": "Blender", "icon": "SiBlender" },
+      { "name": "Ilustrator", "icon": "SiAdobeillustrator" },
+      { "name": "Photoshop", "icon": "SiAdobephotoshop" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Starbucks ux/ui design",
+    "category": "Web Project",
+    "link": "starbucks-ux-ui-design",
+    "desc": "A modern web concept inspired by Starbucks, featuring a sleek design, vibrant imagery, and intuitive navigation. Built with Next.js and Tailwind CSS for a responsive and engaging user experience.",
+    "scale": null,
+    "image1": "/images/images-projects/starbucks-ux/starbucks2.webp",
+    "image2": "/images/images-projects/starbucks-ux/starbucks2.webp",
+    "image3": "/images/images-projects/starbucks-ux/starbucks1.webp",
+    "image4": "/images/images-projects/starbucks-ux/starbucks3.jpg",
+    "video": null,
+    "model": null,
+    "github": "https://github.com/lorenzoJimenez301/starbucks-web-app",
+    "netlify": "https://startbucks-web-page.netlify.app/",
+    "tecnoUsed": [
+      { "name": "Next.js", "icon": "SiNextdotjs" },
+      { "name": "Netlify", "icon": "SiNetlify" },
+      { "name": "Tailwind CSS", "icon": "SiTailwindcss" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Muffin Dulzura Brand Design",
+    "category": "3D Model",
+    "link": "muffin-dulzura-brand-design-3d-model",
+    "desc": "Brand identity and packaging design for Muffin Dulzura, a bakery brand. The project includes logo design, label creation, and 3D modeling of the muffin packaging to showcase the product's appealing and sweet image.",
+    "scale": 5,
+    "image1": "/images/images-projects/coffee-md/md1.jpg",
+    "image2": "/images/images-projects/coffee-md/md2.jpg",
+    "image3": "/images/images-projects/coffee-md/md3.jpg",
+    "image4": "/images/images-projects/coffee-md/md4.jpg",
+    "video": null,
+    "model": "/models/cafe.glb",
+    "tecnoUsed": [
+      { "name": "Blender", "icon": "SiBlender" },
+      { "name": "Ilustrator", "icon": "SiAdobeillustrator" },
+      { "name": "Photoshop", "icon": "SiAdobephotoshop" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "McDonald's 3D Model",
+    "category": "3D Model",
+    "link": "mcdonald-2d-model",
+    "desc": "Detailed 3D model of a McDonald's restaurant, featuring realistic materials, carefully crafted lighting, and iconic brand elements. Perfect for product renders, architectural visualizations, and creative presentations.",
+    "scale": 3,
+    "image1": "/images/images-projects/mcdonalds/Mac 4.png",
+    "image2": "/images/images-projects/mcdonalds/Mac 1.png",
+    "image3": "/images/images-projects/mcdonalds/Mac 2.png",
+    "image4": "/images/images-projects/mcdonalds/Mac 3.png",
+    "video": null,
+    "model": "/models/mac.glb",
+    "tecnoUsed": [
+      { "name": "Blender", "icon": "SiBlender" },
+      { "name": "Ilustrator", "icon": "SiAdobeillustrator" },
+      { "name": "Photoshop", "icon": "SiAdobephotoshop" }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Revolver 3D Model",
+    "category": "3D Model",
+    "link": "revolver-3d-model",
+    "desc": "Revolver 3D model with realistic textures and intricate details, perfect for visualizations and animations.",
+    "scale": 8,
+    "image1": "/images/images-projects/revolver/Revolver 1.png",
+    "image2": "/images/images-projects/revolver/Revolver 2.png",
+    "image3": "/images/images-projects/revolver/Revolver 2.png",
+    "image4": "/images/images-projects/revolver/Revolver 3.png",
+    "video": "/videos/Video Revolver.mp4",
+    "model": "/models/Revolver.glb",
+    "tecnoUsed": [
+      { "name": "Blender", "icon": "SiBlender" },
+      { "name": "After Effects", "icon": "SiAdobeaftereffects" },
+      { "name": "Photoshop", "icon": "SiAdobephotoshop" },
+      { "name": "Premiere Pro", "icon": "SiAdobepremierepro" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Yamaha MT-03 Cinematic",
+    "category": "Graphic Design",
+    "link": "mt03-cinematic",
+    "desc": "Video project showcasing the Yamaha MT-03 motorcycle with cinematic visuals and dynamic editing.",
+    "scale": null,
+    "image1": "/images/images-projects/mt03/MT03 1.jpeg",
+    "image2": "/images/images-projects/mt03/MT03 2.jpeg",
+    "image3": "/images/images-projects/mt03/MT03 3.jpeg",
+    "image4": "/images/images-projects/mt03/MT03 4.png",
+    "video": "/videos/Video MT-03 Full.mp4",
+    "model": null,
+    "tecnoUsed": [
+      { "name": "Photoshop", "icon": "SiPhotoshop" },
+      { "name": "After Effects", "icon": "SiAdobeaftereffects" },
+      { "name": "Premiere Pro", "icon": "SiAdobepremierepro" }
+    ]
+  }
+  ,
+  {
+    "id": 9,
+    "name": "Motion Graphics - Pepsi Halloween",
+    "category": "Graphic Design",
+    "link": "pepsi-halloween-motion-graphics",
+    "desc": "Motion graphics project for Pepsi's Halloween campaign, featuring spooky animations and vibrant visuals to capture the festive spirit.",
+    "scale": null,
+    "image1": "/images/images-projects/pepsi-halloween/Pepsi Proceso.png",
+    "image2": "/images/images-projects/pepsi-halloween/Flyer Pepsi.png",
+    "image3": "/images/images-projects/pepsi-halloween/Flyer Pepsi.png",
+    "image4": "/images/images-projects/pepsi-halloween/Flyer Pepsi.png",
+    "video": "/videos/Pepsi Completo.mp4",
+    "model": null,
+    "tecnoUsed": [
+      { "name": "Photoshop", "icon": "SiPhotoshop" },
+      { "name": "After Effects", "icon": "SiAdobeaftereffects" },
+      { "name": "Premiere Pro", "icon": "SiAdobepremierepro" }
+    ]
+  }
+]
