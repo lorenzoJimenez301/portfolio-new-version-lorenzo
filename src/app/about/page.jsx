@@ -159,7 +159,7 @@ const About = () => {
         <article className='py-10 flex flex-col gap-20 items-center bg-lorenzo-lightgray dark:bg-lorenzo-lightdark text-lorenzo-dark dark:text-lorenzo-gray mask-l-from-80% mask-r-from-80%'>
           <h2 className='text-3xl font-medium'>Clients & Partners</h2>
           <div className='container mx-auto flex justify-center items-center'>
-            <SliderAbout duration={0.5} />
+            <SliderAbout duration={0.3} />
           </div>
         </article>
       </section>
