@@ -194,4 +194,24 @@
       { "name": "Premiere Pro", "icon": "SiAdobepremierepro" }
     ]
   }
+   ,
+  {
+    "id": 10,
+    "name": "Corsair M65 3D Model",
+    "category": "3D Model",
+    "link": "M65-3d-model",
+    "desc": "High-quality 3D model of the Corsair M65 gaming mouse, featuring realistic materials, precise details, and a sleek design—ideal for product renders and visualizations.",
+    "scale": 2.5,
+    "image1": "/images/images-projects/M65/M65 8.png",
+    "image2": "/images/images-projects/M65/M65 Publicidad 1.png",
+    "image3": "/images/images-projects/M65/M65 9.png",
+    "image4": "/images/images-projects/M65/Historia M65.png",
+    "video": "/videos/M65 Final.mp4",
+    "model": "/models/M65.glb",
+    "tecnoUsed": [
+      { "name": "Photoshop", "icon": "SiPhotoshop" },
+      { "name": "After Effects", "icon": "SiAdobeaftereffects" },
+      { "name": "Premiere Pro", "icon": "SiAdobepremierepro" }
+    ]
+  }
 ]

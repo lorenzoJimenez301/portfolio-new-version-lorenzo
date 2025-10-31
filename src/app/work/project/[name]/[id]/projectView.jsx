@@ -108,7 +108,7 @@ export const ProjectPage = ({ project }) => {
             loop
             muted
             playsInline
-            className='absolute h-full w-full object-fit object-center z-0'
+            className='absolute h-full w-full object-cover object-center z-0'
             src={project.video}
           />
         )}

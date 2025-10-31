@@ -33,7 +33,7 @@ export const SliderComponent = () => {
           },
         },
         autoScroll: {
-          speed: 1,
+          speed: 0.3,
           pauseOnHover: true,
         },
       }}

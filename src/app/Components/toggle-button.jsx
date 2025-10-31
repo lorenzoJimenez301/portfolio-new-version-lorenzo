@@ -33,16 +33,16 @@ export default function LayoutAnimation ({ props }) {
   }
 
   return (
-    <div className='toggle flex items-center gap-2 text-lorenzo-dark dark:text-lorenzo-gray'>
+    <div className='toggle flex items-center gap-2 text-lorenzo-dark dark:text-lorenzo-gray cursor-pointer'>
       <FaSun />
       <button
-        className={`toggle-container bg-lorenzo-medigray dark:bg-lorenzo-medidark h-8 w-20 flex items-center p-1 rounded-full ${
+        className={`toggle-container bg-lorenzo-medigray dark:bg-lorenzo-medidark h-8 w-20 flex items-center p-1 rounded-full cursor-pointer ${
           isDark ? 'justify-end' : 'justify-start'
         }`}
         onClick={toggleSwitch}
       >
         <motion.div
-          className='toggle-handle w-6 h-6 rounded-full bg-lorenzo-dark dark:bg-lorenzo-gray'
+          className='toggle-handle w-6 h-6 rounded-full bg-lorenzo-dark dark:bg-lorenzo-gray cursor-pointer'
           layout
           transition={{
             type: 'spring',
