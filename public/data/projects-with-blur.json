@@ -321,5 +321,30 @@
       }
     ],
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGElEQVR4nGNgAANuMGDwAIPHT55MmzIFACU3Blxv/KECAAAAAElFTkSuQmCC"
+  },
+  {
+    "id": 11,
+    "name": "Logitech Yeti GX 3D Model",
+    "category": "3D Model",
+    "link": "yetigx-3d-model",
+    "desc": "High-quality 3D model of the Logitech Yeti GX microphone, featuring realistic materials, precise details, and a sleek design—ideal for product renders and visualizations.",
+    "scale": 10,
+    "image1": "/images/images-projects/Yeti/Yeti 3.png",
+    "image2": "/images/images-projects/Yeti/Yeti 4.png",
+    "image3": "/images/images-projects/Yeti/Yeti 2.png",
+    "image4": "/images/images-projects/Yeti/Yeti 1.png",
+    "video": null,
+    "model": "/models/Yeti.glb",
+    "tecnoUsed": [
+      {
+        "name": "Blender",
+        "icon": "SiBlender"
+      },
+      {
+        "name": "After Effects",
+        "icon": "SiAdobeaftereffects"
+      }
+    ],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAACXBIWXMAAAsTAAALEwEAmpwYAAAALUlEQVR4nAEiAN3/AJiYm//7/P7/ZWlu/xQSEv8At7a5/5+go/8xMzT/DAwM/2NPEvFrvKUzAAAAAElFTkSuQmCC"
   }
 ]

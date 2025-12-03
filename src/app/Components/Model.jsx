@@ -13,29 +13,28 @@ import { Spinner } from "react-spinner-toolkit";
 import { useTheme } from "next-themes";
 
 function Loader() {
-  const { theme } = useTheme();
 
-  const color =
-    theme === "dark"
-      ? "var(--color-lorenzo-green)"
-      : "var(--color-lorenzo-dark)";
-  return (
-    <Html center>
-      <div className="flex flex-col justify-center items-center gap-2 w-max">
-        <Spinner
-          color={color}
-          shape="cubeGrid"
-          loading
-          speed={1}
-          size={50}
-          transition={true}
-        />
-        <p className="text-lorenzo-dark dark:text-lorenzo-green">
-          Loading 3D Model
-        </p>
-      </div>
-    </Html>
-  );
+const { theme } = useTheme();
+
+const color = theme === "dark" ? "#cbfe00" :  "#212121";
+
+return (
+  <Html center>
+    <div className="flex flex-col justify-center items-center gap-2 w-max">
+      <Spinner
+        color={color}
+        shape="cubeGrid"
+        loading
+        speed={1}
+        size={50}
+        transition={true}
+      />
+      <p className="text-lorenzo-dark dark:text-lorenzo-green">
+        Loading 3D Model
+      </p>
+    </div>
+  </Html>
+);
 }
 
 function Modelo({ model, scale }) {
