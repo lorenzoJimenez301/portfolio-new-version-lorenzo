@@ -224,7 +224,7 @@
     "image3": "/images/images-projects/Yeti/Yeti 2.png",
     "image4": "/images/images-projects/Yeti/Yeti 1.png",
     "video": null,
-    "model": "/models/Yeti.glb",
+    "model": "/models/Yeti301.glb",
     "tecnoUsed": [
       { "name": "Blender", "icon": "SiBlender" },
       { "name": "After Effects", "icon": "SiAdobeaftereffects" }
