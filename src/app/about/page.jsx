@@ -14,7 +14,7 @@ import { ButtonFill } from '../Components/ButtonFill'
 import { ButtonStroke } from '../Components/ButtonStroke'
 import MenuAbout from '../Components/MenuAbout'
 import mockup from '../../../public/images/mockup-lorenzo.jpg'
-import photo from '../../../public/images/Spreed.png'
+import photo from '../../../public/images/lorenzo.png'
 import { ButtonAction } from '../Components/ButtonAction'
 
 export const MoreDetails = ({ href, className = '', ...props }) => {
@@ -150,7 +150,7 @@ const About = () => {
               width={1080}
               height={1080}
               sizes='(max-width: 1024px) 100vw, 50vw'
-              className=''
+              className='mask-b-from-50% mask-b-to-90% filter grayscale'
             />
           </div>
         </section>
